@@ -1,0 +1,58 @@
+﻿@model IEnumerable<ApplicationUser>
+@{
+    ViewData["Title"] = "Home Page";
+}
+@section Scripts {
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/TableUsers.js" asp-append-version="true"></script>
+}
+
+<div class="container mt-5 ">
+    <div class="d-flex justify-content-between mb-3">
+        <div>
+            <button class="btn btn-primary" id="blockSelected">Block</button>
+            <button class="btn btn-success" id="unblockSelected">
+                <i class="bi bi-unlock-fill"></i>
+            </button>
+            <button class="btn btn-danger" id="deleteSelected">
+                <i class="bi bi-trash"></i>
+            </button>
+        </div>
+        <div>
+            <input type="text" class="form-control" id="filterInput" placeholder="Filter" style="max-width: 200px;">
+        </div>
+    </div>
+    <table class="table table-striped table-hover" id="userTable">
+        <thead class="table-light">
+            <tr>
+                <th><input type="checkbox" id="selectAll"></th>
+                <th>Name</th>
+                <th>
+                    Email
+                    <button class="btn btn-sm btn-light" id="sortEmailButton">
+                        <span id="sortEmailIcon">⬍</span>
+                    </button>
+                </th>
+                <th>Last seen</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td><input type="checkbox" class="select-row" data-user-id="@user.Id"></td>
+                    <td>
+                        @user.UserName<br>
+                        <span class="text-muted">@user.RoleCompany</span>
+                    </td>
+                    <td>@user.Email</td>
+                    <td title="@user.LastLoginTime?.ToString()">@user.LastLoginTime?.ToString("g")</td>
+                    <td class="status-column">@((user.IsBlocked) ? "Blocked" : "Active")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

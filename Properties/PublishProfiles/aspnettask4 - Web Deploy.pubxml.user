@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <History>False|2025-01-29T23:23:14.0725042Z||;True|2025-01-30T00:05:54.5907783+02:00||;True|2025-01-29T23:02:14.6629059+02:00||;False|2025-01-29T22:45:02.1800982+02:00||;False|2025-01-29T22:29:40.1036129+02:00||;False|2025-01-29T22:16:04.6690040+02:00||;False|2025-01-29T22:03:49.7873411+02:00||;False|2025-01-29T22:00:20.6583094+02:00||;False|2025-01-29T21:19:17.5082511+02:00||;False|2025-01-29T21:07:36.0652018+02:00||;False|2025-01-29T20:47:27.9317558+02:00||;False|2025-01-29T20:41:59.6957754+02:00||;False|2025-01-29T20:40:04.1038186+02:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=tcp:task4dbs.database.windows.net,1433%3bInitial Catalog=Task4DB%3bPersist Security Info=False%3bUser ID=SQLAdmin%3bPassword=SQL_Admin_98.%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=True%3bConnection Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+    <DestinationConnectionStrings Include="Kestrel:Certificates:Development:Password">
+      <Value>Server=tcp:task4dbs.database.windows.net,1433%3bInitial Catalog=Task4DB%3bPersist Security Info=False%3bUser ID=SQLAdmin%3bPassword=SQL_Admin_98.%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=True%3bConnection Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="Task4_1.Data.ApplicationDbContext">
+      <Value>Server=tcp:task4dbs.database.windows.net,1433%3bInitial Catalog=Task4DB%3bPersist Security Info=False%3bUser ID=SQLAdmin%3bPassword=SQL_Admin_98.%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=True%3bConnection Timeout=30%3b</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

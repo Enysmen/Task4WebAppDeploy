@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <History>True|2025-01-30T19:59:54.0772452Z||;True|2025-01-30T14:52:54.7022883+02:00||;True|2025-01-30T14:51:13.8236790+02:00||;True|2025-01-30T14:34:21.1099935+02:00||;True|2025-01-30T14:33:17.5278449+02:00||;True|2025-01-30T01:26:45.8736670+02:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=tcp:task412.database.windows.net,1433%3bInitial Catalog=Task4_1%3bPersist Security Info=False%3bUser ID=SQLAdmin%3bPassword=SQL_Admin_98.%3bMultipleActiveResultSets=False%3bEncrypt=False%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+    <DestinationConnectionStrings Include="Kestrel:Certificates:Development:Password">
+      <Value>Server=tcp:task412.database.windows.net,1433%3bInitial Catalog=Task4_1%3bPersist Security Info=False%3bUser ID=SQLAdmin%3bPassword=SQL_Admin_98.%3bMultipleActiveResultSets=False%3bEncrypt=False%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="Task4_1.Data.ApplicationDbContext">
+      <Value>Server=tcp:task412.database.windows.net,1433%3bInitial Catalog=Task4_1%3bPersist Security Info=False%3bUser ID=SQLAdmin%3bPassword=SQL_Admin_98.%3bMultipleActiveResultSets=False%3bEncrypt=False%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

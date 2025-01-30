@@ -1,0 +1,25 @@
+{
+  "dependencies": {},
+  "parameters": {
+    "aspnettask4.resourceGroupName": {
+      "Name": "aspnettask4.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "Task4Contair"
+    },
+    "aspnettask4.resourceGroupLocation": {
+      "Name": "aspnettask4.resourceGroupLocation",
+      "Type": null,
+      "Value": "northeurope"
+    },
+    "aspnettask4.subscriptionId": {
+      "Name": "aspnettask4.subscriptionId",
+      "Type": "subscription",
+      "Value": "04aeeab5-d6e6-4545-9149-c17ff7b70461"
+    },
+    "aspnettask4.resourceName": {
+      "Name": "aspnettask4.resourceName",
+      "Type": null,
+      "Value": "aspnettask4"
+    }
+  }
+}
